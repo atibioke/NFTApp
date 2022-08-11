@@ -1,19 +1,22 @@
-import { Text, View } from 'react-native'
-import React, { Component } from 'react'
+import { Text, View, Image, TextInput } from "react-native";
+import { COLORS, SIZES, SHADOWS, FONTS, assets } from "../constants";
 
 export class HomeHeader extends Component {
   render() {
     return (
-      <View>
-        <Text>HomeHeader</Text>
+      <View style={{ backgroundColor: COLORS.primary, padding: SIZES.font }}>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <Image source={assets.logo} />
+        </View>
       </View>
-    )
+    );
   }
 }
 
-export default HomeHeader
-
-
-
-
-
+export default HomeHeader;

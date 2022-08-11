@@ -1,3 +1,4 @@
+import { registerRootComponent } from 'expo';
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { useFonts } from "expo-font";
@@ -39,5 +40,5 @@ const App = () => {
     </NavigationContainer>
   );
 };
-
+registerRootComponent(App);
 export default App;
